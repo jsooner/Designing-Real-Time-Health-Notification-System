@@ -1,10 +1,10 @@
 # Real_time_Health_Alert_Notification
+Inspired from the smart wearables and IOT devices and propose data pipeline which capture
+high-velocity stream of patient vitals such as heartbeat, temperature, blood pressure and etc
+and email notification is sent when abnormal vitals are detected.
 
-Propose a reliable data pipeline solution to capture high-velocity stream of patient vitals such as body temperature, heartbeat, blood pressure (BP) coming from IoT devices and send an instant email notification incase of abnormal vitals.
 
-The detailed use case regarding project objective and tools to be used are provided in **CaptsoneProject.docx**
-
-## Uploaded Files
+## Table of Contents
 1. A script to run/start Kafka server, create a topic(kafka.pdf)
 2.	A script to create producer application to read from RDS and push the message into the topic in below format  and list the messages in the topic (kafka_produce_patient_vitals.py)
 3.	A script of Pyspark application to read all messages from Kafka topic into HDFS file in parquet format in_df2.writeStream.format().. (kafka_spark_patient_vitals.py)
